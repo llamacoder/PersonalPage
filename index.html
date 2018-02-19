@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <!-- HOSTED -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+
+  <!-- LOCAL -->
+  <link href="./css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="./js/index.js"></script>
+  <script src="./js/modal.js"></script>
+
+</head>
+<body>
+<div class="overflow-wrap">
+
+<!-- HOME -->
+  <div class="modal-wrap flex">
+    <div class="mask"></div>
+    <div class="modal" id="modal">
+      <div class="carousel-wrap">
+        <div class="window">
+          <div id="carousel">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          </div>
+          <i class="mdi mdi-chevron-left" id="prev"></i>
+          <i class="mdi mdi-chevron-right" id="next"></i>
+        </div>
+
+      </div>
+      <div class="info-box">
+        <div class="title"></div>
+        <div class="tag"></div>
+        <div class="detail"></div>
+        <a href="#" target="_blank"><div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div></a>
+      </div>
+      <i class="close mdi mdi-close"></i>
+    </div>
+  </div>
+
+  <section id="home" class="flex height-fix">
+    <div id="pt" class="canvas"></div>
+    <div class="flex">
+
+      <div class="text">
+        Hi! I'm <span class="highlight">Tracey Dolsen</span>.
+        <br>
+        I'm a software engineer.
+      </div>
+
+      <div class="button page-link" dest="about">See my skills <i class="mdi mdi-arrow-right"></i></div>
+
+      <nav class="flex">
+        <div class="link-wrap">
+          <div class="active page-link" dest="home">home</div>
+          <div class="page-link" dest="about">my skills</div>
+          <div class="page-link" dest="portfolio">portfolio</div>
+          <div class="page-link" dest="blog">resume</div>
+          <div class="page-link" dest="contact">contact</div>
+        </div>
+        <i class="mdi mdi-menu"></i>
+      </nav>
+    </div>
+
+  </section>
+
+<!-- ABOUT -->
+  <section id="about">
+    <div class="container flex">
+
+      <div class="header waypoint" data-animation="slide-in-left">MY SKILLS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+      <div class="flex row label-wrap">
+        <div class="flex row-gt-sm">
+        <div class="flex bullet-wrap ">
+          <div class="hex-wrap waypoint" data-animation="flip-in-x">
+            <div class="hexagon">
+              <i class="mdi mdi-rocket"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in">
+            <div class="label bold">Server Side</div>
+            <div>I do love a RESTful API!  I have 15 years of experience building enterprise-wide services in JavaScript, Java, and C++.</div>
+          </div>
+        </div>
+
+        <div class="flex bullet-wrap " >
+          <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+            <div class="hexagon">
+              <i class="mdi mdi-cellphone-link"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+            <div class="label bold">Client Side</div>
+            <div>I build intuitive, responsive layouts using Bootstrap, Materialize, SASS, and client-side JavaScript for gorgeous presentations.</div>
+          </div>
+        </div>
+        </div>
+        <div class="flex row-gt-sm">
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+              <div class="hexagon">
+                <i class="mdi mdi-briefcase-download"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+              <div class="label bold">Data Access</div>
+              <div>I have 10 years of experience in relational and non-relational DBMS's such as PostgreSQL, MySQL, Firestore, and Oracle. </div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+              <div class="hexagon">
+                <i class="mdi mdi-brush"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+              <div class="label bold">Design</div>
+              <div>I owned my own successful design company for 12 years, offering design services to professional photographers.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-wrapper flex row-gt-sm">
+        <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+          <img src="./images/me.jpg" class="me">
+          <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+          <div class="label bold">This is me!</div>
+          <div>
+            I'm a software engineer in Boulder, CO.
+            <br>
+            I am passionate about serious software that solves interesting problems in a beautiful way.
+            <br>
+            <span class="page-link highlight" dest="contact">Let's make something special.</span>
+          </div>
+        </div>
+
+        <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
+          <div class="bar flex">
+            <div class="bar fill" style="width:85%">
+              <div class="tag bold flex">JavaScript</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:85%">
+              <div class="tag bold flex">Node.js</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:65%">
+              <div class="tag bold flex">React</div>
+            </div>
+            <span>70%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:75%">
+              <div class="tag bold flex">RDBMS</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:35%">
+              <div class="tag bold flex">Angular</div>
+            </div>
+            <span>40%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:65%">
+              <div class="tag bold flex">HTML/CSS</div>
+            </div>
+            <span>70%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:75%">
+              <div class="tag bold flex">Photoshop</div>
+            </div>
+            <span>80%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:55%">
+              <div class="tag bold flex">AE/Premiere</div>
+            </div>
+            <span>60%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:85%">
+              <div class="tag bold flex">Java (prior)</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+          <div class="bar flex">
+            <div class="bar fill" style="width:85%">
+              <div class="tag bold flex">C++ (prior)</div>
+            </div>
+            <span>90%</span>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- PORTFOLIO -->
+  <section class="flex" id="portfolio">
+
+    <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+    <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+    <div class="filter-wrap waypoint" data-animation="fade-in">
+      <div class="flex row">
+        <div class="filter" data-filter="all">ALL</div>
+        <div class="filter" data-filter=".server">SERVER</div>
+        <div class="filter" data-filter=".client">CLIENT</div>
+        <div class="filter" data-filter=".design">DESIGN</div>
+      </div>
+      <div class="float-bar">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".server">SERVER</div>
+          <div class="filter" data-filter=".client">CLIENT</div>
+          <div class="filter" data-filter=".design">DESIGN</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery" class="container flex row wrap waypoint">
+      <div class="mix server client design" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <!-- <div class="bold">Portfolio D&#233j&#224 Vu</div> -->
+            <div class="bold">Portfolio Deja Vu</div>
+            <span class="highlight">3 versions: JavaScript/React, JavaScript/Angular/Firestore, Python/Django</span>
+          </div>
+          <div class="button" id="portfolio">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix server client design" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Boomtown Showcase</div>
+            <span class="highlight">JavaScript + HTML/CSS + Materialize</span>
+          </div>
+          <div class="button" id="showcase">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix server" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">E/PRO</div>
+            <span class="highlight">Node + Express + D3</span>
+          </div>
+          <div class="button" id="epro">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix server" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Boomtown Workshop Scheduler</div>
+            <span class="highlight">Node + Express + Twilio</span>
+          </div>
+          <div class="button" id="scheduler">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix design" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Broken Fence Studios Website</div>
+            <span class="highlight">HTML/CSS + Bootstrap</span>
+          </div>
+          <div class="button" id="bfsSite">LEARN MORE</div>
+        </div>
+      </div>
+
+
+      <div class="mix design" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Custom Videos</div>
+            <span class="highlight">Photoshop + After Effects</span>
+          </div>
+          <div class="button" id="wes">LEARN MORE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- BLOG -->
+  <section id="blog">
+    <div class="container flex">
+
+      <div class="header waypoint" data-animation="slide-in-left">RESUME</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+      <embed src="./TraceyDolsen.pdf" width="800px" height="1100px" />
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+    <div class="container flex">
+      <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+      <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Have a question or want to work together?</div>
+      <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+        <input placeholder="Name" type="text" name="name" required>
+        <input placeholder="Enter email" type="email" name="email" required>
+        <textarea placeholder="Your Message" type="text" name="message"></textarea>
+        <div id="success">
+          <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
+        </div>
+        <input class="button" type="submit" id="submit" value=SUBMIT>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+    <div class="icon-wrap flex row">
+      <a href="https://www.linkedin.com/in/traceydolsen">
+        <div class="flex icon" id="icon-2">
+          <i class="mdi mdi-linkedin"></i>
+        </div>
+      </a>
+    </div>
+    <div class="info-box">
+      <div class="footnote">TRACEY DOLSEN     *     traceydolsen@gmail.com               *     303-579-3384 <span class="highlight"></span></div>
+    </div>
+  </footer>
+
+</div>
+
+<div id="preload">
+   <img src="images/me.jpg"/>
+   <img src="./images/epro-thumb-w-mobile.png"/>
+   <img src="./images/showcase-thumb.png"/>
+   <img src="./images/scheduler-thumb.png"/>
+   <img src="./images/wes-thumb.png"/>
+   <img src="./images/portfolio-thumb.png"/>
+   <img src="./images/bfs-thumb.png"/>
+   <img src="./images/epro-0.png"/>
+   <img src="./images/epro-1.png"/>
+   <img src="./images/epro-2.png"/>
+   <!-- <img src="img/filler.jpg"/>
+   <img src="img/.jpg"/>
+   <img src="img/blog-1.jpg"/>
+   <img src="img/blog-2.jpg"/>
+   <img src="img/blog-3.jpg"/>
+   <img src="img/blog-4.jpg"/>-->
+   <img src="./images/scheduler-0.png"/>
+   <img src="./images/scheduler-1.png"/>
+   <img src="./images/scheduler-2.png"/>
+   <img src="./images/bfsSite-0.png"/>
+   <img src="./images/bfsSite-1.png"/>
+   <img src="./images/bfsSite-2.png"/>
+   <img src="./images/portfolio-0.png"/>
+   <img src="./images/portfolio-1.png"/>
+   <img src="./images/portfolio-2.png"/>
+   <img src="./images/wes-0.png"/>
+   <img src="./images/wes-1.png"/>
+   <img src="./images/wes-2.png"/>
+   <img src="./images/showcase-0.png"/>
+   <img src="./images/showcase-1.png"/>
+   <img src="./images/showcase-2.png"/>
+</div>
+
+</body>
+</html>
