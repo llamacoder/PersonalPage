@@ -13,31 +13,41 @@ $(document).ready(function(){
       title: 'Boomtown Showcase',
       tag: 'AUGMENTED SHOWCASE EXPERIENCE.',
       detail: "The purpose of this site is to provide attendees of Boomtown Accelerator's Demo Day with information on all the companies in the current cohort. This was a solo project  using JavaScript, HTML, CSS, and Materialize. The link below does not contain real data.",
-      link: 'http://smooth-current.surge.sh/'
+      buttonTitle: 'View Site',
+      link: 'http://smooth-current.surge.sh/',
+      type: 'website'
     },
     bfsSite: {
       title: 'Broken Fence Studios Website',
       tag: 'ALBUM DESIGN AND VIDEO PRODUCTION.',
       detail: 'Good stuff goes here about my biz',
-      link: 'http://www.brokenfencestudios.com'
+      buttonTitle: 'View Site',
+      link: 'http://www.brokenfencestudios.com',
+      type: 'website'
     },
     epro: {
       title: 'E/Pro Fitness',
       tag: 'FITNESS FOR WOMEN.',
       detail: "Women aren't just men with smaller bodies.  E/Pro is a training and nutrition app designed for active women.  It anaylyzes each woman's menstrual cycle and birth control method to provide a weekly training and nutrition guide.  I worked as part of a 4-person team on this project and was responsible for the D3 data visualization graphs.",
-      link: 'https://vimeo.com/256153613'
+      buttonTitle: 'Demo',
+      link: 'https://vimeo.com/256153613',
+      type: 'video'
     },
     scheduler: {
       title: 'Boomtown Workshop Scheduler',
       tag: 'MOBILE PUSH NOTIFICATION.',
       detail: 'Mobile push notification for Boomtown.  More goes here....',
-      link: 'https://vimeo.com/256158302'
+      buttonTitle: 'Demo',
+      link: 'https://vimeo.com/256158302',
+      type: 'video'
     },
     wes: {
       title: 'Custom Videos',
       tag: 'ALWAYS PERSONAL, ALWAYS EMOTIONAL.',
       detail: 'I make touching, elegant, emotional custom videos for any occasion.  I specialize in weddings, graduations, and memorials, but I can evoke both tears and joy for just about any special event.  You really have to see these in motion and hear the music to get the full experience, so click below, set to full screen, and enjoy this custom graduation video.',
-      link: 'https://vimeo.com/214552238'
+      link: 'https://vimeo.com/214552238',
+      buttonTitle: 'Watch',
+      type: 'video'
     }
   };
 
@@ -111,16 +121,30 @@ $(document).ready(function(){
   }
 
   function fillModal(id) {
-    console.log(id);
-    console.log(modalText[id].title);
-    console.log($('#modal'));
-    console.log($('#modal .title'));
     $('#modal .title').text(modalText[id].title);
     $('#modal .detail').text(modalText[id].detail);
     $('#modal .tag').text(modalText[id].tag);
-    if (modalText[id].link) $('#modal .button').addClass('visible')
-                                               .parent()
-                                               .attr('href', modalText[id].link)
+    if (modalText[id].link) {
+      if (modalText[id].type === 'video') {
+        if (modalText[id].link) $('#modal #url-box').removeClass('visible').addClass('hidden')
+        if (modalText[id].link) $('#modal #video-box').removeClass('hidden')
+        .addClass('visible')
+        .parent()
+        .attr('href', modalText[id].link)
+      if (modalText[id].buttonTitle) $('#modal #video-box').text(modalText[id].buttonTitle)
+
+      } else {
+        if (modalText[id].link) $('#modal #video-box').removeClass('visible').addClass('hidden')
+        if (modalText[id].link) $('#modal #url-box').addClass('visible')
+        .removeClass('hidden')
+        .parent()
+        .attr('href', modalText[id].link)
+        if (modalText[id].buttonTitle) $('#modal #url-box').text(modalText[id].buttonTitle)
+      }
+    } else {
+      $('#modal #video-box').removeClass('visible').addClass('visible')
+      $('#modal #url-box').removeClass('visible').addClass('visible')
+    }
 
     $.each($('#modal li'), function(index, value ) {
       $(this).text(modalText[id].bullets[index]);

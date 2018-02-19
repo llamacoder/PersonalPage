@@ -10,6 +10,7 @@
 
   <!-- LOCAL -->
   <link href="./css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/prettyPhoto.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
 
@@ -22,6 +23,14 @@
   <!-- LOCAL -->
   <script src="./js/index.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/jquery.prettyPhoto.js"></script>
+
+
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
 
 </head>
 
@@ -48,8 +57,11 @@
           <div class="title"></div>
           <div class="tag"></div>
           <div class="detail"></div>
+          <a href="#" target="_blank" rel="prettyPhoto">
+            <div class="button" id="video-box"><i class="mdi mdi-open-in-new"></i>WATCH</div>
+          </a>
           <a href="#" target="_blank">
-            <div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div>
+            <div class="button" id="url-box"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div>
           </a>
         </div>
         <i class="close mdi mdi-close"></i>
