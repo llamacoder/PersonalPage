@@ -3,7 +3,7 @@
 // require and use express, require body-parser, create a port
 const express = require('express')
 const app = express()
-const bodyParser = require('body-Parser')
+const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({extended: false}))
