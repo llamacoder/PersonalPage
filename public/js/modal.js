@@ -5,7 +5,7 @@ $(document).ready(function() {
     portfolio: {
       title: 'Tracey Made',
       tag: 'PROFESSIONAL PORTFOLIO.',
-      detail: 'I built the same portfolio project four times using different frameworks, different databases, and different deployment services.',
+      detail: 'I built the same portfolio project four times using different frameworks, different databases, and different deployment services. A detailed page is on the way!',
       // link: '#',
       // buttonTitle: 'See the Details',
       // type: 'website'
