@@ -14,7 +14,7 @@ app.use(express.static('public'))
 // write a catch all route that will respond with status of 418 ;)
 //https://sitesdoneright.com/blog/2013/03/what-is-418-im-a-teapot-status-code-error
 app.use(function(req, res, next){
-  res.sendStatus(418)
+   res.sendStatus(404)
 })
 
 
