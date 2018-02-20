@@ -436,9 +436,11 @@
           case "vimeo":
             f = l(movie_width, movie_height),
             movie_id = pp_images[set_position];
+            console.log(movie_id);
             var t = /http(s?):\/\/(www\.)?vimeo.com\/(\d+)/,
               i = movie_id.match(t);
-            movie = "http://player.vimeo.com/video/" + i[3] + "?title=0&byline=0&portrait=0",
+            movie = "https://player.vimeo.com/video/" + i[3] + "?title=0&byline=0&portrait=0",
+            console.log(movie);
             settings.autoplay && (movie += "&autoplay=1;"),
             vimeo_width = f.width + "/embed/?moog_width=" + f.width,
             toInject = settings.iframe_markup.replace(/{width}/g, vimeo_width).replace(/{height}/g, f.height).replace(/{path}/g, movie);
