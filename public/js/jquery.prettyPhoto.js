@@ -291,7 +291,7 @@
       iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
       inline_markup: '<div class="pp_inline">{content}</div>',
       custom_markup: "",
-      social_tools: '<div class="twitter"><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>'
+      // social_tools: '<div class="twitter"><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>'
     }, a);
     var f,
       v,
