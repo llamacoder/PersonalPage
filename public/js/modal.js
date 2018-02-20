@@ -135,9 +135,7 @@ $(document).ready(function() {
     $('#modal .tag').text(modalText[id].tag);
     if (modalText[id].link) {
       if (modalText[id].type === 'video') {
-        if (modalText[id].link)
           $('#modal #url-box').removeClass('visible').addClass('hidden')
-        if (modalText[id].link)
           $('#modal #video-box').removeClass('hidden').addClass('visible').parent().attr('href', modalText[id].link)
         if (modalText[id].buttonTitle)
           $('#modal #video-box').text(modalText[id].buttonTitle)
