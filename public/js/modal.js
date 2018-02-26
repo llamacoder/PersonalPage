@@ -5,10 +5,10 @@ $(document).ready(function() {
     portfolio: {
       title: 'Tracey Made',
       tag: 'PROFESSIONAL PORTFOLIO.',
-      detail: 'I built the same portfolio project four times using different frameworks, different databases, and different deployment services. A detailed page is on the way!',
-      // link: '#',
-      // buttonTitle: 'See the Details',
-      // type: 'website'
+      detail: 'I built the same portfolio project four times using different frameworks, different databases, and different deployment services.  It was a great learning experience.',
+      link: 'http://tracey-portfolio.surge.sh/',
+      buttonTitle: 'See the Details',
+      type: 'website'
     },
     showcase: {
       title: 'Boomtown Showcase',
